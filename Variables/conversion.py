@@ -1,10 +1,12 @@
 #kl to mile------------------
-kl_to_mile=0.62
-result=kl_to_mile*10
+conv_rate=0.62
+kilo=int(input("Enter Kl:"))
+result=conv_rate*kilo
 print("Kl to Mile:",result)
 
 #taka to rupee---------------
 
-rate=0.71
-conversion= rate*100
-print(f"100 Taka to Rupee:{conversion}")
+conv_rate=0.71
+tk=int(input("Enter the amount(tk):"))
+result=conv_rate*tk
+print(result)
