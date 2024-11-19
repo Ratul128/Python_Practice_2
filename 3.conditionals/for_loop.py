@@ -59,19 +59,25 @@ for key in person:
 #for specific key and value
 for key,value in person.items():
     if key=="name":
-        print(key,value)
+        print(key,value)'''
 
 #create a list with all keys
-list=[]
-for key in person:
-    list.append(key)
-print(f"List is:{list}")'''
+def create_key_list_from_dic(dic):
+    list = []
+    for key in person :
+        list.append ( key )
+    print ( f"List is:{list}" )
+
+
 
 #create a list with all the values
-value_list=[]
-for value in person.values():
-    value_list.append(value)
-print(f"Value is:{value_list}")
+def create_Valu_list_from_dictionary(dictionary):
+    value_list = []
+    for value in dictionary.values ():
+        value_list.append (value)
+    print ( f"Value is:{value_list}" )
+create_list_from_dictionary(person)
+
 
 
 
