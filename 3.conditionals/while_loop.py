@@ -27,6 +27,9 @@ if sNumber<=lNumbe:
 else:
     print("Enter valid range")'''
 
+def test():
+test()
+
 
 
 
