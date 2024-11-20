@@ -1,26 +1,23 @@
 
-'''def dhaka():
+def dhaka():
     print("Dhaka112")
-
-for i in range(5):
-    print(i)
-    dhaka()'''
+    for i in range(5):
+        print(i)
 
 #print 1 to 10
+def func_1():
+    for i in range ( 1 , 11 , 2 ) :
+        print ( i )
 
-'''for i in range(1,11,2):
-    print(i)'''
+def func_2():
+    number = [1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9]
+    for i in number :
+        print(f"Iteration: {i}")
 
-
-'''number=[1,2,3,4,5,6,7,8,9]
-
-for i in number:
-    print(f"Iteration: {i}")'''
-
-'''language="English"
-
-for i in language:
-    print(i)'''
+def func_3():
+    language = "English"
+    for i in language :
+        print ( i )
 
 #print dictionary using loop
 person={
@@ -41,33 +38,41 @@ person={
 }
 
 #for all key
-'''for i in person:
-    print(i)
+def all_keys(dic):
+    for i in dic:
+        print(i)
 
 #for all values
-for j in person.values():
-    print(j)
+def all_values(dic):
+    for j in person.values ( ) :
+        print ( j )
+
 
 #for all keys and values
-for key,value in person.items():
-    print(f"{key} : {value}")
+def all_key_and_values(dic):
+    for key , value in person.items ( ) :
+        print ( f"{key} : {value}" )
 
-for key in person:
-    if key=="name":
-        print(key)
+
+def specific_keys(dic):
+    for key in person :
+        if key == "name" :
+            print ( key )
+
 
 #for specific key and value
-for key,value in person.items():
-    if key=="name":
-        print(key,value)'''
+def key_value_of_dictionary(dic):
+    for key , value in dic.items ( ) :
+        if key == "name" :
+            print ( key , value )
+
 
 #create a list with all keys
-def create_key_list_from_dic(dic):
+def create_key_list_from_dic(dictionary):
     list = []
-    for key in person :
+    for key in dictionary:
         list.append ( key )
-    print ( f"List is:{list}" )
-
+    print ( f"Kye List is:{list}" )
 
 
 #create a list with all the values
@@ -75,8 +80,22 @@ def create_Valu_list_from_dictionary(dictionary):
     value_list = []
     for value in dictionary.values ():
         value_list.append (value)
-    print ( f"Value is:{value_list}" )
-create_list_from_dictionary(person)
+    print ( f"Value List is:{value_list}" )
+
+#dhaka()
+#func_1()
+#func_2()
+#func_3()
+#all_keys(person)
+#all_values(person)
+#all_key_and_values(person)
+#specific_keys(person)
+key_value_of_dictionary(person)
+create_key_list_from_dic(person)
+create_Valu_list_from_dictionary(person)
+
+
+
 
 
 
