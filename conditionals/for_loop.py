@@ -50,7 +50,7 @@ def all_values(dic):
 
 #for all keys and values
 def all_key_and_values(dic):
-    for key , value in person.items ( ) :
+    for key , value in dic.items ( ) :
         print ( f"{key} : {value}" )
 
 
@@ -90,9 +90,9 @@ def create_Valu_list_from_dictionary(dictionary):
 #all_values(person)
 #all_key_and_values(person)
 #specific_keys(person)
-key_value_of_dictionary(person)
-create_key_list_from_dic(person)
-create_Valu_list_from_dictionary(person)
+#key_value_of_dictionary(person)
+#create_key_list_from_dic(person)
+#create_Valu_list_from_dictionary(person)
 
 
 
