@@ -2,7 +2,7 @@
 #import my_module
 
 #option_1
-import my_module
+'''import my_module
 full_name_new=my_module.generate_fullname("Ratul","Hasan")
 print(full_name_new)
 
@@ -17,5 +17,16 @@ full_name_new=generate_fullname("Ratul","Hasan")
 print(full_name_new)
 
 sum_result=summation(20,30)
-print(sum_result)
+print(sum_result)'''
 
+
+from conditionals import for_loop
+employee={
+    "first Name": "Mehedi",
+    "last Name": "Ratul",
+    "age":29,
+    "salary":100000,
+    "department":"QA"
+}
+
+for_loop.all_key_and_values(employee)
